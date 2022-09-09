@@ -1,0 +1,27 @@
+.divNotTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  padding: 4rem 1.5rem;
+  margin-top: 1.5rem;
+
+  width: 736px;
+  height: 244px;
+
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+
+}
+
+.contentNotTodo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentNotTodo span, strong {
+  color: var(--gray-300)
+}

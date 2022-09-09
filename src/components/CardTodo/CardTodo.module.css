@@ -1,0 +1,87 @@
+.cardTodo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+
+  padding: 1rem;
+  gap: 12px;
+  border-radius: 8px;
+
+  color: var(--gray-100);
+}
+
+.cardTodo + .cardTodo  {
+  margin-top: 12px;
+}
+
+.checkboxRounded {
+  position: relative;
+}
+
+.checkboxRounded label {
+  background-color: transparent;
+  border: 1px solid var(--blue-300);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--white);
+}
+
+.checkboxRounded label:after {
+  border: 1.5px solid var(--white);
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 1.5px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-45deg);
+  width: 5px;
+  color: var(--white);
+}
+
+.checkboxRounded input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkboxRounded input[type="checkbox"]:checked + label {
+  background-color: var(--purple-700);
+  border-color: var(--purple-700);
+  color: var(--white);
+}
+
+.checkboxRounded input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.spanTodoConclusion {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  width: 100%;
+  text-decoration-line: line-through;
+
+  color: var(--gray-300);
+}
+
+.spanTodo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  width: 100%;
+}

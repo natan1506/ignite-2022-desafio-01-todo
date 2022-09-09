@@ -1,0 +1,46 @@
+.formInsert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -27px;
+  position: relative;
+  gap: 8px;
+  width: 100%;
+}
+
+.formInsert input {
+  width: 39rem;
+  height: 3.375rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-300);
+  line-height: 140%;
+  padding: 1rem;
+}
+
+.formInsert button[type=submit] {
+  width: 5.62rem;
+  height: 3.25rem;
+  border-radius: 8px;
+  background: var(--blue-700);
+  color: var(--white);
+  border: 0;
+  gap: 8px;
+  font-size: 0.85rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+
+.formInsert button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.formInsert button[type=submit]:not(:disabled):hover {
+  background: var(--blue-300);
+}

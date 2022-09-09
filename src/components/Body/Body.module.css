@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listTodo {
+  width: 46rem;
+  
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.createdTodo {
+  line-height: 1rem;
+  color: var(--blue-300);
+  font-weight: 700;
+}
+
+.createdTodo span{
+  padding: 2px 8px;
+  background-color: var(--gray-400);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.doneTodo {
+  line-height: 1rem;
+  color: var(--purple-300);
+  font-weight: 700;
+}
+
+
+.doneTodo span {
+  padding: 2px 8px;
+  background-color: var(--gray-400);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 0.75rem;
+
+}
